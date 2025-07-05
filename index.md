@@ -9,7 +9,7 @@ title: Home
 
 **Mathematics Student**  
 University of Washington 
-[Email Me](lvincedillon _ gmail _ come)
+Email: [Email]lvincedillon _ gmail _ com
 
 ---
 

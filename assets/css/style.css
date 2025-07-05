@@ -1,0 +1,91 @@
+/* Dark theme base styles */
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container layout */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Paragraphs and lists */
+p, ul, ol {
+  margin-bottom: 1.2rem;
+}
+
+/* Links */
+a {
+  color: #90caf9;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffcc80;
+  text-decoration: underline;
+}
+
+/* Navigation bar (optional if you build a layout later) */
+nav a {
+  margin-right: 1rem;
+  font-weight: bold;
+}
+
+/* Images (like profile photo) */
+img.prof-photo {
+  max-width: 180px;
+  border-radius: 50%;
+  display: block;
+  margin: 1.5rem 0;
+  box-shadow: 0 0 10px #000;
+}
+
+/* Code and pre blocks */
+code {
+  background-color: #1e1e1e;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+}
+
+pre {
+  background-color: #1e1e1e;
+  padding: 1em;
+  overflow-x: auto;
+  border-radius: 6px;
+  font-size: 0.9em;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+}
+
+th, td {
+  border: 1px solid #333;
+  padding: 0.75em;
+  text-align: left;
+}
+
+th {
+  background-color: #1f1f1f;
+}
+
+/* Inline math (if using MathJax) */
+mjx-container {
+  color: #e0e0e0 !important;
+}
