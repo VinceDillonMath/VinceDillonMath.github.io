@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>CV | Vince Dillon</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const correctPassword = "prof2025";  // ← Set your own password
+      const userInput = prompt("Enter the password to access the CV:");
+      if (userInput === correctPassword) {
+        document.getElementById("cv-content").style.display = "block";
+      } else {
+        document.body.innerHTML = `
+          <div class="container">
+            <h2>Access Denied</h2>
+            <p>The password you entered is incorrect.</p>
+          </div>
+        `;
+      }
+    });
+  </script>
+</head>
+<body>
+  <div class="container" id="cv-content" style="display: none;">
+    <h1>Curriculum Vitae</h1>
+    <p>Click the link below to view or download my CV:</p>
+    <p>
+      📄 <a href="/assets/pdf/Vince_Dillon_CV.pdf" target="_blank">Download CV (PDF)</a>
+    </p>
+  </div>
+</body>
+</html>
