@@ -1,0 +1,16 @@
+title: "Vince Dillon"
+email: lvincedillon _ gmail _ com
+description: >-
+  Homepage of Vince Dillon, Professor of Mathematics.
+baseurl: "" # leave empty for root site (user.github.io)
+url: "https://vincedillonmath.github.io"
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-paginate
+
+# Tell Jekyll to include our custom CSS
+include:
+  - assets/css/style.css

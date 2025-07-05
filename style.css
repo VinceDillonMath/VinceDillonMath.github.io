@@ -1,0 +1,52 @@
+/* assets/css/style.css */
+
+/* Global dark theme styles */
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #bb86fc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Container styles */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Header and Navigation */
+header {
+  background-color: #1e1e1e;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header nav a {
+  margin: 0 1rem;
+  color: #bb86fc;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* For images, e.g., the professor’s photo */
+img.prof-photo {
+  max-width: 200px;
+  border-radius: 50%;
+  display: block;
+  margin: 1rem 0;
+}
