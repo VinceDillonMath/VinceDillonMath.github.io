@@ -8,11 +8,10 @@ title: Research Papers
 Here are some of my published and preprint papers:
 
 - **Title of Paper 1**  
-  _Journal Name_, 2025. [arXiv:XXXX.XXXX](https://arxiv.org/abs/XXXX.XXXX)
+Preprints from the SMALL REU will be added soon. Topics include statistics of $L$-functions, arithmetic statistics associated to elliptic curvces, and more.
 
-- **Title of Paper 2**  
-  _Preprint_, 2024. [PDF](/assets/paper2.pdf)
+# Expository Notes
 
----
+Below are some PDF files for some of my expository writings. I appologize for the inconsistant format and varying quality.
 
-More papers coming soon.
+- **To be added**

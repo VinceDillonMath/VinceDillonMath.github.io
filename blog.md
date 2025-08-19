@@ -5,7 +5,7 @@ title: Blog
 
 # Blog
 
-Mathematical musings, expository posts, and occasional notes.
+Here, I'll post some very short (possibly handwavy) blog posts about things I'm interested in.
 
 <ul>
   {% for post in site.posts %}
