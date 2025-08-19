@@ -1,3 +1,22 @@
+/* Change the global font */
+body {
+  font-family: "Merriweather", serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #222;
+}
+
+/* Make math equations use the same font */
+mjx-container {
+  font-family: "Merriweather", serif !important;
+}
+
+/* Optional: different font for code blocks */
+code, pre {
+  font-family: "Fira Code", monospace;
+}
+
+
 /* Dark theme base styles */
 body {
   background-color: #121212;
