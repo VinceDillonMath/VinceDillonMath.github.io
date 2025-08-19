@@ -5,7 +5,7 @@ title: Home
 
 # Lawrence (Vince) Dillon
 
-![Headshot](/assets/photos/profile.jpg){: .prof_photo}
+![Headshot](/assets/photos/profile.jpg = 250 x 250){: .prof_photo}
 
 **Mathematics Student**  
 University of Washington \\
