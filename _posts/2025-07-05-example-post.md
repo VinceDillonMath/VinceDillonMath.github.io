@@ -7,7 +7,7 @@ date: 2025-08-18
 The purpose of this post is to present a counterexample to the so-called class field tower problem. Interestingly, the solution lies almost entirely within the realm of pure algebra and can be understood with almost no background in algebraic number theory. Nonetheless, the problem remained open for decades (~1925-1965) despite being a natural question arising from elementary algebraic number theory. We roughly follow Ershov's notes which can be found \href{https://m-ershov.github.io/Research/gssurvey_revised.pdf}{here}.
 
 For any number field $K$, let $\mathcal I_K$ be the group of fractional ideals in $\mathcal O_K$ and $\mathcal P_K$ the (normal) subgroup of principal ideals. The finite quotient
-$$\mathrm{Cl}_K:=\mathcal I_K/\mathcal P_K$$
+\[\mathrm{Cl}_K:=\mathcal I_K/\mathcal P_K\]
 is the ideal class group of the number field. This group is a really important invariant of the number field $K$: it's order, called the class number of $K$, measures how far $\mathcal O_K$ is from being a PID. 
 
 Let $\mathbb{H}(K)$ denote the Hilbert class field of $K$; this is the maximal abelian unramified extension of $K$. Beautifully, by the formalism of class field theory, we have that
