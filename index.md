@@ -9,7 +9,7 @@ title: Home
 
 **Mathematics Student**  
 University of Washington \\
-Email (UW): lvid _ at _ uw _ edu\\
+Email (UW): lvid _ uw _ edu\\
 Email (Personal): lvincedillon _ gmail _ com
 
 ---
