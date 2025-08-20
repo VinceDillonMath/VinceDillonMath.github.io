@@ -26,7 +26,7 @@ Let $K$ be a number field and consider the tower of extensions
 \begin{equation}
     K=\mathbb{H}^0(K)\subset \mathbb{H}^1(K)\subset \mathbb{H}^2(K)\subset \dots
 \end{equation}
-    where $\mathbb{H}^n(K)=\mathbb{H}(\mathbb{H}^{n-1}(K)).$ We call the sequence $\{\mathbb{H}^i(K)\}_{i=0}^\infty$ the class field tower of $K$. The question is this: for any number field $K$, does the class field tower $\{\mathbb{H}^i(K)\}$ eventually stabilize? That is, does there exist some $N\in \mathbb{N}$ such that for every $i\geq \mathbb N$, $[\mathbb{H}^i(K):\mathbb{H}^N(K)]=1$?
+    where $\mathbb{H}^n(K)=\mathbb{H}(\mathbb{H}^{n-1}(K)).$ We call the sequence $\{\mathbb{H}^i(K)\}_{i=0}^\infty$ the class field tower of $K$. The question is this: for any number field $K$, does the class field tower $\{\mathbb{H}^i(K)\}$ eventually stabilize? That is, does there exist some $N\in \mathbb{N}$ such that for every $i\geq N$, $[\mathbb{H}^i(K):\mathbb{H}^N(K)]=1$?
 There's a nice equivalent formulation: given a number field $K$, does the exist a finite extension $L$ such that $\mathcal O_L$ is a PID? 
 
 *Proof of equivalence:* One direction is easy. If the CFTP has a positive solution, then for any number field $K$, we can find some 
