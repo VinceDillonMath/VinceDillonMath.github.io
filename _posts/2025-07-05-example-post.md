@@ -41,7 +41,7 @@ There's a nice equivalent formulation: given a number field $K$, does the exist 
     Inductively, this gives $L\mathbb{H}^i(K)=L$ and hence $\mathbb{H}^i(K)\subset L$ for every $i\in \mathbb N$. Since $L$ is a finite extension, the class field tower must eventually stabilize. $\square$
 The first formulation will be used to construct the counterexample, the second is nice motivation.
 
-The counterexample is essentially constructed as follows: we isolate the pro-p subgroup of the limiting Galois group, show the corresponding $\mathbb F_p$-algebra is infinite dimensional, and conclude the group itself (and hence the extension) is infinite. The main tool is the next theorem.
+The counterexample is essentially constructed as follows: we isolate the pro-p subgroup of the limiting Galois group, show the corresponding $\mathbb F_p$-algebra is infinite dimensional, and conclude the group itself (and hence the extension) is infinite.
 
 The *Magnus algebra* over a field k and a finite set of variables $U$, denoted $k\langle\langle U\rangle\rangle$ is the algebra of formal, non-commuting power series in the variables from $U$. For example,
 \begin{equation}
@@ -49,11 +49,16 @@ The *Magnus algebra* over a field k and a finite set of variables $U$, denoted $
 \end{equation}
 in $\mathbb C\langle\langle \{x,y\}\rangle\rangle$.
 
-**Some Definitions.** Let $A=\M/I$ where $I$ is some closed two-sided ideal and $I$ is the kernel of the map $\pi:\M\twoheadrightarrow A$. Notice that $A$ is naturally filtered by $A_n=\pi(F_n)$. Algebras (such as $A$) isomorphic to quotients of the Magnus algebra are called complete filtered algebras. Let $R\subset I$ be a generating set of the ideal and define $r_n=|\{r\in R: \deg(r)=n\}|$. Since $r_n=A_n/A_{n+1}$ is a finite-dimensional space we may assume $r_n<\infty$ for each $n$. Let $a_n=\dim_{\F_p}A_n/A_{n+1}$ and define the formal power series (called the Hilbert series) associated to the presentation $(U,R)$ of $A$
-    $$\text{Hilb}_A(t)=\sum_{n=1}^\infty a_nt^n \quad \text{and} \quad H_R(t)=\sum_{n=1}^\infty r_nt^n.$$
+**Some Definitions.** Let $A=\mathbb F_p\langle\langle U\rangle\rangle/I$ where $I$ is some closed two-sided ideal and $I$ is the kernel of the map $\pi:\mathbb F_p\langle\langle U\rangle\rangle\twoheadrightarrow A$. Notice that $A$ is naturally filtered by $A_n=\pi(F_n)$. Algebras (such as $A$) isomorphic to quotients of the Magnus algebra are called complete filtered algebras. Let $R\subset I$ be a generating set of the ideal and define $r_n=|\{r\in R: \deg(r)=n\}|$. Since $r_n=A_n/A_{n+1}$ is a finite-dimensional space we may assume $r_n<\infty$ for each $n$. Let $a_n=\dim_{\mathbb F_p}A_n/A_{n+1}$ and define the formal power series (called the Hilbert series) associated to the presentation $(U,R)$ of $A$
+    \begin{equation}
+        \text{Hilb}_A(t)=\sum_{n=1}^\infty a_nt^n \quad \text{and} \quad H_R(t)=\sum_{n=1}^\infty r_nt^n.
+    \end{equation}
     Similarly, for a presentation $(X,R)$ of pro-p group $G$ define the series 
-    $$H_R^G(t)=\sum_{r\in R} t^{D(r)}.$$
+    \begin{equation}
+        H_R^G(t)=\sum_{r\in R} t^{D(r)}.
+    \end{equation}
 
+The main tool for constructing the counterexample is the following theorem.
 
 **Theorem** (Golod-Shafarevich Inequality for Complete Filtered Algebras)
 
@@ -61,6 +66,23 @@ in $\mathbb C\langle\langle \{x,y\}\rangle\rangle$.
     \begin{equation}
         \frac{(1-|U|t+H_R(t))\cdot \text{Hilb}_A(t)}{1-t}\geq \frac{1}{1-t}.
     \end{equation}
+
+
 I believe an elementary proof has never been published in English, only in the original paper [CITATION]. At some point, I hope to transcribe the proof, at which point I will update this post.
 
-We now have a simple corollary.
+We now have a few simple corollaries. The first and second give better criteria for when a complete filtered algebra is infinite. The third extends these results to pro-p groups by their completed group algebras.
+
+**Corollary 1** *If we can find $\tau\in (0,1)$ such that $1-|U|\tau +H_R(\tau)\leq 0,$ then $\text{Hilb}_A(t)$ diverges and hence $A$ is infinite-dimensional.*
+
+*Proof.* Suppose we have $\tau\in (0,1)$ such that $1-|U|\tau+H_R(\tau)\leq 0$ but such that $\text{Hilb}_A(\tau)$ converges. Since $H_R(\tau)$ has non-negative coefficients, the above bound means it converges. Plugging into the Golod-Shafarevich inequality, this gives
+    \begin{equation}
+        \frac{(1-|U|\tau+H_R(\tau))\cdot \text{Hilb}_A(\tau)}{1-\tau}\geq \frac{1}{1-\tau}
+    \end{equation}
+    as an inequality of real numbers (not of power series as defined above). Hence, we obtain
+    \begin{equation}
+        (1-|U|\tau+H_R(\tau))\cdot \text{Hilb}_A(\tau)\geq 1.
+    \end{equation}
+    However, this is clearly a contradiction since $\text{Hilb}_A(\tau)>0$.
+
+
+
