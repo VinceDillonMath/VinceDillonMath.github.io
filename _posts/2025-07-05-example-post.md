@@ -4,7 +4,7 @@ title: "The Class Field Tower Problem and Golod-Shafarevich Groups"
 date: 2025-08-18
 ---
 
-The purpose of this post is to present a counterexample to the so-called class field tower problem. Interestingly, the solution lies almost entirely within the realm of pure algebra and can be understood with almost no background in algebraic number theory. Nonetheless, the problem remained open for decades (~1925-1965) despite being a natural question arising from elementary algebraic number theory. We roughly follow Ershov's notes which can be [here]found (https://m-ershov.github.io/Research/gssurvey_revised.pdf).
+The purpose of this post is to present a counterexample to the so-called class field tower problem. Interestingly, the solution lies almost entirely within the realm of pure algebra and can be understood with almost no background in algebraic number theory. Nonetheless, the problem remained open for decades (~1925-1965) despite being a natural question arising from elementary algebraic number theory. We roughly follow Ershov's notes which can be found [here](https://m-ershov.github.io/Research/gssurvey_revised.pdf).
 
 For any number field $K$, let $\mathcal I_K$ be the group of fractional ideals in $\mathcal O_K$ and $\mathcal P_K$ the (normal) subgroup of principal ideals. The finite quotient
 \begin{equation}
@@ -29,7 +29,7 @@ Let $K$ be a number field and consider the tower of extensions
     where $\mathbb{H}^n(K)=\mathbb{H}(\mathbb{H}^{n-1}(K)).$ We call the sequence $\{\mathbb{H}^i(K)\}_{i=0}^\infty$ the class field tower of $K$. The question is this: for any number field $K$, does the class field tower $\{\mathbb{H}^i(K)\}$ eventually stabilize? That is, does there exist some $N\in \mathbb{N}$ such that for every $i\geq \mathbb N$, $[\mathbb{H}^i(K):\mathbb{H}^N(K)]=1$?
 There's a nice equivalent formulation: given a number field $K$, does the exist a finite extension $L$ such that $\mathcal O_L$ is a PID? 
 
-\textit{Proof of equivalence:} One direction is easy. If the CFTP has a positive solution, then for any number field $K$, we can find some 
+*Proof of equivalence:* One direction is easy. If the CFTP has a positive solution, then for any number field $K$, we can find some 
     \begin{equation} [\mathbb{H}^i(K):\mathbb{H}^{i-1}(K)]=1.
     \end{equation}
     Then since $\mathrm{Gal}(\mathbb{H}^i(K)/\mathbb{H}^{i-1}(K))\cong C_{\mathbb{H}^{i-1}(K)}$ are both trivial, we have $|C_{\mathbb{H}^{i-1}(K)}|=1$ and hence $\mathcal{O}_{\mathbb{H}^{i-1}(K)}$ is a PID. \\
@@ -38,7 +38,7 @@ There's a nice equivalent formulation: given a number field $K$, does the exist 
     \begin{equation}
     L=L\mathbb{H}^1(K)=L\mathbb{H}^0(K)=LK=L.
     \end{equation}
-    Inductively, this gives $L\mathbb{H}^i(K)=L$ and hence $\mathbb{H}^i(K)\subset L$ for every $i\in \N$. Since $L$ is a finite extension, the class field tower must eventually stabilize.
+    Inductively, this gives $L\mathbb{H}^i(K)=L$ and hence $\mathbb{H}^i(K)\subset L$ for every $i\in \mathbb N$. Since $L$ is a finite extension, the class field tower must eventually stabilize. $\square$
 The first formulation will be used to construct the counterexample, the second is nice motivation.
 
 The counterexample is essentially constructed as follows: we isolate the pro-p subgroup of the limiting Galois group, show the corresponding $\mathbb F_p$-algebra is infinite dimensional, and conclude the group itself (and hence the extension) is infinite. The main tool is the next theorem.
