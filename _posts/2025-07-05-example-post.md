@@ -26,7 +26,7 @@ Let $K$ be a number field and consider the tower of extensions
 \begin{equation}
     K=\mathbb{H}^0(K)\subset \mathbb{H}^1(K)\subset \mathbb{H}^2(K)\subset \dots
 \end{equation}
-    where $\mathbb{H}^n(K)=\mathbb{H}(\mathbb{H}^{n-1}(K)).$ We call the sequence $\{\mathbb{H}^i(K)\}_{i=0}^\infty$ the class field tower of $K$. The question is this: for any number field $K$, does the class field tower $\{\mathbb{H}^i(K)\}$ eventually stabilize? That is, does there exist some $N\in \mathbb{N}$ such that for every $i\geq N$, $[\mathbb{H}^i(K):\mathbb{H}^N(K)]=1$?
+    where $\mathbb{H}^n(K)=\mathbb{H}(\mathbb{H}^{n-1}(K)).$ We call the sequence ${\mathbb{H}^i(K)}_{i=0}^\infty$ the class field tower of $K$. The question is this: for any number field $K$, does the class field tower ${\mathbb{H}^i(K)}$ eventually stabilize? That is, does there exist some $N\in \mathbb{N}$ such that for every $i\geq N$, $[\mathbb{H}^i(K):\mathbb{H}^N(K)]=1$?
 There's a nice equivalent formulation: given a number field $K$, does the exist a finite extension $L$ such that $\mathcal O_L$ is a PID? 
 
 *Proof of equivalence:* One direction is easy. If the CFTP has a positive solution, then for any number field $K$, we can find some 
@@ -47,9 +47,9 @@ The *Magnus algebra* over a field k and a finite set of variables $U$, denoted $
 \begin{equation}
     x+xy+xy^2+xy^3+\dots\neq x+yx+y^2x+y^3x+\dots
 \end{equation}
-in $\mathbb C\langle\langle \{x,y\}\rangle\rangle$.
+in $\mathbb C\langle\langle {x,y}\rangle\rangle$.
 
-**Some Definitions.** Let $A=\mathbb F_p\langle\langle U\rangle\rangle/I$ where $I$ is some closed two-sided ideal and $I$ is the kernel of the map $\pi:\mathbb F_p\langle\langle U\rangle\rangle\twoheadrightarrow A$. Notice that $A$ is naturally filtered by $A_n=\pi(F_n)$. Algebras (such as $A$) isomorphic to quotients of the Magnus algebra are called complete filtered algebras. Let $R\subset I$ be a generating set of the ideal and define $r_n=\lvert \{r\in R: \deg(r)=n\}\rvert $. Since $r_n=A_n/A_{n+1}$ is a finite-dimensional space we may assume $r_n<\infty$ for each $n$. Let $a_n=\dim_{\mathbb F_p}A_n/A_{n+1}$ and define the formal power series (called the Hilbert series) associated to the presentation $(U,R)$ of $A$
+**Some Definitions.** Let $A=\mathbb F_p\langle\langle U\rangle\rangle/I$ where $I$ is some closed two-sided ideal and $I$ is the kernel of the map $\pi:\mathbb F_p\langle\langle U\rangle\rangle\twoheadrightarrow A$. Notice that $A$ is naturally filtered by $A_n=\pi(F_n)$. Algebras (such as $A$) isomorphic to quotients of the Magnus algebra are called complete filtered algebras. Let $R\subset I$ be a generating set of the ideal and define $r_n=\lvert {r\in R: \deg(r)=n}\rvert $. Since $r_n=A_n/A_{n+1}$ is a finite-dimensional space we may assume $r_n<\infty$ for each $n$. Let $a_n=\dim_{\mathbb F_p}A_n/A_{n+1}$ and define the formal power series (called the Hilbert series) associated to the presentation $(U,R)$ of $A$
     \begin{equation}
         \text{Hilb}_A(t)=\sum_{n=1}^\infty a_nt^n \quad \text{and} \quad H_R(t)=\sum_{n=1}^\infty r_nt^n.
     \end{equation}
@@ -89,7 +89,7 @@ We now have a few simple corollaries. The first and second give better criteria 
         \lvert R\rvert >\frac{\lvert U\rvert ^2}{4}.
     \end{equation}
 
-*Proof.* If $\lvert R\rvert =\infty $ the statement is vacuously true since we always assume the generating set $U$ to be finite. Thus, without loss of generality, we can restrict to the case where $\lvert R\rvert <\infty$ and hence $H_R(t)<\infty$ is a finite sum. Recall the filtration $\{\mathcal A_n\}$ on $\mathcal A$. Since we assume $(U,R)$ to be minimal, we have $r_1=\lvert R\cap \mathcal A_1\rvert =0$ for otherwise one of the generators can be expressed as a power series of the others, contradicting the minimality of $(U,R).$ Now, for any $\tau >0$ we have $H_R(\tau)\leq \lvert R\rvert \tau^2$. Moreover, by Corollary 1 and the fact that $\mathcal A$ is assumed to be finite-dimensional, we have that $1-\lvert U\rvert \tau+H_R(\tau)>0$ giving
+*Proof.* If $\lvert R\rvert =\infty $ the statement is vacuously true since we always assume the generating set $U$ to be finite. Thus, without loss of generality, we can restrict to the case where $\lvert R\rvert <\infty$ and hence $H_R(t)<\infty$ is a finite sum. Recall the filtration ${\mathcal A_n}$ on $\mathcal A$. Since we assume $(U,R)$ to be minimal, we have $r_1=\lvert R\cap \mathcal A_1\rvert =0$ for otherwise one of the generators can be expressed as a power series of the others, contradicting the minimality of $(U,R).$ Now, for any $\tau >0$ we have $H_R(\tau)\leq \lvert R\rvert \tau^2$. Moreover, by Corollary 1 and the fact that $\mathcal A$ is assumed to be finite-dimensional, we have that $1-\lvert U\rvert \tau+H_R(\tau)>0$ giving
     \begin{equation}
         0<1-\lvert U\rvert \tau +H_R(\tau)\leq 1-\lvert U\rvert \tau + \lvert R\rvert \tau^2.
     \end{equation}
@@ -100,7 +100,7 @@ We now have a few simple corollaries. The first and second give better criteria 
 
 **Corollary 3** Let $G\cong \hat F_p(X)/N(R)$ be a pro-p group such that $X$ is minimal and finite. If $\lvert R\rvert \leq \lvert X\rvert ^2/4,$ then $G$ is infinite.
 
-*Proof.* Suppose $G$ is a finite p-group. As before, if $\lvert R\rvert =\infty$ the claim is trivial so we may assume the presentation is finite. From the pair $(X,R)$ for $G$, we get the corresponding presentation $(U,\{1-r:r\in R\})$ for the completed group algebra $\F_p[[G]]$ with $\lvert U\rvert =\lvert X\rvert $ and with $\lvert \{1-r: r\in R\}\rvert = \lvert R\rvert $. Since $\F_p[[G]]$ is finite-dimensional, we have from Corollary 1 that
+*Proof.* Suppose $G$ is a finite p-group. As before, if $\lvert R\rvert =\infty$ the claim is trivial so we may assume the presentation is finite. From the pair $(X,R)$ for $G$, we get the corresponding presentation $(U,{1-r:r\in R})$ for the completed group algebra $mathbb F_p[[G]]$ with $\lvert U\rvert =\lvert X\rvert $ and with $\lvert {1-r: r\in R} \rvert = \lvert R\rvert $. Since $\mathbb F_p[[G]]$ is finite-dimensional, we have from Corollary 1 that
 
 \begin{equation}
     1-\lvert U\rvert t+H_R(t)>0
