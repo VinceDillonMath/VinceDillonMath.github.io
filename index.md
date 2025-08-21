@@ -26,4 +26,4 @@ Over the summer of 2025 I participated in the SMALL REU at Williams College, wor
 
 
 
-Last edited: 8/21/2025, 2:30 PM
+Last edited: 8/21/2025, 2:54 PM
