@@ -60,9 +60,9 @@ in $\mathbb C\langle\langle \{x,y\}\rangle\rangle$.
 
 The main tool for constructing the counterexample is the following theorem.
 
-**Theorem** (Golod-Shafarevich Inequality for Complete Filtered Algebras)
+**Theorem.** (Golod-Shafarevich Inequality for Complete Filtered Algebras)
 
-*Let $A=\M/I$ be a complete filtered algebra and $R$ a generating set for the ideal $I$. Let the formal power series $H_R(t)$ and $\text{Hilb}_A(t)$ be as before. Then,* 
+*Let $A=\mathbb F_p\langle\langle U\rangle\rangle/I$ be a complete filtered algebra and $R$ a generating set for the ideal $I$. Let the formal power series $H_R(t)$ and $\text{Hilb}_A(t)$ be as before. Then,* 
     \begin{equation}
         \frac{(1-|U|t+H_R(t))\cdot \text{Hilb}_A(t)}{1-t}\geq \frac{1}{1-t}.
     \end{equation}
@@ -72,7 +72,7 @@ I believe an elementary proof has never been published in English, only in the o
 
 We now have a few simple corollaries. The first and second give better criteria for when a complete filtered algebra is infinite. The third extends these results to pro-p groups by their completed group algebras.
 
-**Corollary 1** *If we can find $\tau\in (0,1)$ such that $1-|U|\tau +H_R(\tau)\leq 0,$ then $\text{Hilb}_A(t)$ diverges and hence $A$ is infinite-dimensional.*
+**Corollary 1** If we can find $\tau\in (0,1)$ such that $1-|U|\tau +H_R(\tau)\leq 0,$ then $\text{Hilb}_A(t)$ diverges and hence $A$ is infinite-dimensional.
 
 *Proof.* Suppose we have $\tau\in (0,1)$ such that $1-|U|\tau+H_R(\tau)\leq 0$ but such that $\text{Hilb}_A(\tau)$ converges. Since $H_R(\tau)$ has non-negative coefficients, the above bound means it converges. Plugging into the Golod-Shafarevich inequality, this gives
     \begin{equation}
@@ -84,5 +84,25 @@ We now have a few simple corollaries. The first and second give better criteria 
     \end{equation}
     However, this is clearly a contradiction since $\text{Hilb}_A(\tau)>0$.
 
+**Corollary 2**  Let $\mathcal A$ be a finite-dimensional complete filtered algebra with minimal presentation $(U,R)$ and assume $|U|\geq 2.$ By minimal, we mean that no proper subset of $U$ generates $\mathcal A.$ We have
+    \begin{equation}
+        |R|>\frac{|U|^2}{4}.
+    \end{equation}
 
+*Proof.* If $|R|=\infty $ the statement is vacuously true since we always assume the generating set $U$ to be finite. Thus, without loss of generality, we can restrict to the case where $|R|<\infty$ and hence $H_R(t)<\infty$ is a finite sum. Recall the filtration $\{\mathcal A_n\}$ on $\mathcal A$. Since we assume $(U,R)$ to be minimal, we have $r_1=|R\cap \mathcal A_1|=0$ for otherwise one of the generators can be expressed as a power series of the others, contradicting the minimality of $(U,R).$ Now, for any $\tau >0$ we have $H_R(\tau)\leq |R|\tau^2$. Moreover, by Corollary 1 and the fact that $\mathcal A$ is assumed to be finite-dimensional, we have that $1-|U|\tau+H_R(\tau)>0$ giving
+    \begin{equation}
+        0<1-|U|\tau +H_R(\tau)\leq 1-|U|\tau + |R|\tau^2.
+    \end{equaion}
+    Thus, setting $\tau = 2/|U|$ gives
+    \begin{equation}
+        1<|R|\frac{4}{U^2}\implies |R|>\frac{|U|^2}{4}.
+    \end{equation}
 
+**Corollary 3** Let $G\cong \hat F_p(X)/N(R)$ be a pro-p group such that $X$ is minimal and finite. If $|R|\leq |X|^2/4,$ then $G$ is infinite.
+
+*Proof.* Suppose $G$ is a finite p-group. As before, if $|R|=\infty$ the claim is trivial so we may assume the presentation is finite. From the pair $(X,R)$ for $G$, we get the corresponding presentation $(U,\{1-r:r\in R\})$ for the completed group algebra $\F_p[[G]]$ with $|U|=|X|$ and with $|\{1-r: r\in R\}|= |R|$. Since $\F_p[[G]]$ is finite-dimensional, we have from Corollary 1 that
+
+\begin{equation}
+    1-|U|t+H_R(t)>0
+\end{equation}
+for all $t\in (0,1).$ Furthermore, since $X$ is assumed to be minimal, we have from the lemma that $\deg(1-r)\geq 2$ for all $r\in R$ yielding $H_R(t)\leq |R|t^2$ for $t>0.$ Hence, setting $t=2/|X|=2/|U|$ gives the result.
