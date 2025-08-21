@@ -105,4 +105,4 @@ We now have a few simple corollaries. The first and second give better criteria 
 \begin{equation}
     1-|U|t+H_R(t)>0
 \end{equation}
-for all $t\in (0,1).$ Furthermore, since $X$ is assumed to be minimal, we have from the lemma that $\deg(1-r)\geq 2$ for all $r\in R$ yielding $H_R(t)\leq |R|t^2$ for $t>0.$ Hence, setting $t=2/|X|=2/|U|$ gives the result.
+    for all $t\in (0,1).$ Furthermore, since $X$ is assumed to be minimal, we have from the lemma that $\deg(1-r)\geq 2$ for all $r\in R$ yielding $H_R(t)\leq |R|t^2$ for $t>0.$ Hence, setting $t=2/|X|=2/|U|$ gives the result.
