@@ -5,13 +5,12 @@ title: Research Papers
 
 # Research Papers
 
-Here are some of my published and preprint papers:
+Here are some of my submitted and preprint papers:
 
-- **Title of Paper 1**  
-Preprints from the SMALL REU will be added soon. Topics include statistics of $L$-functions, arithmetic statistics associated to elliptic curvces, and more.
+- **Breaking Universality in the Lower Order Terms in the 1-level and 2-level Density of Holomorphic Cusp Newforms**  
+(Lawrence Dillon, Xiaoyao Huang, Say-Yeon Kwon, Meiling Laurence, Steven J. Miller, Vishal Muthuvel, Luke Rowen, Pramana Saldin, and Steven Zanetti), submitted to Acta Artihmetica. arXiv URL: https://arxiv.org/abs/2508.21691
 
 # Expository Notes
 
-Below are some PDF files for some of my expository writings. I appologize for the inconsistant format and varying quality.
+Below are some PDF files for some of my expository writings. I apologize for the inconsistent format and varying quality.
 
-- **To be added**
