@@ -3,14 +3,28 @@ layout: default
 title: Blog
 ---
 
-# Blog
+<h1>Blog</h1>
 
-Here, I'll post some very short (possibly handwavy) blog posts about things I'm interested in.
-
-<ul>
+<div class="blog-list">
   {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a> — {{ post.date | date: "%B %d, %Y" }}
-    </li>
+    <div class="blog-card">
+      {% if post.thumbnail %}
+        <a href="{{ post.url }}">
+          <img src="{{ post.thumbnail }}" alt="Thumbnail for {{ post.title }}" class="blog-thumb">
+        </a>
+      {% endif %}
+
+      <div class="blog-info">
+        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        <p class="blog-date">{{ post.date | date: "%B %d, %Y" }}</p>
+        <p class="blog-excerpt">
+          {% if post.excerpt %}
+            {{ post.excerpt }}
+          {% else %}
+            {{ post.content | strip_html | truncate: 150 }}
+          {% endif %}
+        </p>
+      </div>
+    </div>
   {% endfor %}
-</ul>
+</div>
