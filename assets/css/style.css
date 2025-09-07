@@ -121,15 +121,15 @@ mjx-container {
   display: flex;
   gap: 15px;
   padding: 15px;
-  border: 1px solid #ddd;
+  border: 1px solid #121212;
   border-radius: 12px;
-  background: #fafafa;
+  background: #121212;
   box-shadow: 2px 2px 6px rgba(0,0,0,0.05);
   transition: background 0.2s;
 }
 
 .blog-card:hover {
-  background: #f0f0f0;
+  background: #121212;
 }
 
 .blog-thumb {
@@ -149,11 +149,11 @@ mjx-container {
 
 .blog-date {
   font-size: 0.9rem;
-  color: #666;
+  color: #dadada;
   margin-bottom: 8px;
 }
 
 .blog-excerpt {
   font-size: 1rem;
-  color: #333;
+  color: #dadada;
 }
