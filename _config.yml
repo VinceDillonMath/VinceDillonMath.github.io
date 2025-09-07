@@ -3,7 +3,7 @@ email: lvincedillon _ gmail _ com
 description: >-
   Homepage of Vince Dillon, Professor of Mathematics.
 baseurl: "" # leave empty for root site (user.github.io)
-url: "https://vincedillonmath.github.io"
+url: "www.vincedillon.com"
 markdown: kramdown
 theme: minima
 plugins:
