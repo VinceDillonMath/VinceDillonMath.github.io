@@ -14,7 +14,7 @@ Email (Personal): lvincedillon _ gmail _ com
 
 ---
 
-Welcome to my personal webiste. Below are links to my papers, blog, and CV. The CV is password protected with "(Parenthetical Name)(Last Name)" all lowercase, no parentheses.
+Welcome to my personal webiste! Below are links to my papers, blog, and CV. The CV is password protected with "(Parenthetical Name)(Last Name)" all lowercase, no parentheses.
 
 - [Papers](/papers)
 - [Blog](/blog)
@@ -26,4 +26,4 @@ Over the summer of 2025 I participated in the SMALL REU at Williams College, wor
 
 
 
-Last edited: 8/22/2025, 7:19 AM
+Last edited: 9/6/25, 7:12 PM
