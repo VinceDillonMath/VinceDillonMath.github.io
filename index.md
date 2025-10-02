@@ -14,16 +14,15 @@ Email (Personal): lvincedillon _ gmail _ com
 
 ---
 
-Welcome to my personal webiste! Below are links to my papers, blog, and CV. The CV is password protected with "(Parenthetical Name)(Last Name)" all lowercase, no parentheses.
+Welcome to my personal webiste! Below are links to my papers and blog.
 
 - [Papers](/papers)
 - [Blog](/blog)
-- [CV](cv.html)
 
-I'm a senior at the University of Washington studying pure math. I'm interested in number theory, arithmetic geometry, and algebraic geometry.
+I'm a senior at the [University of Washington](https://math.washington.edu/) studying pure math. Right now I'm most interested in arithmetic geometry and number theory, but I tend to just like all math.
 
 Over the summer of 2025 I participated in the SMALL REU at Williams College, working under Professor Steven J. Miller. This was an amazing experience and I want to thank Professor Miller and all of my collaborators for such a wonderful and productive summer.
 
 
 
-Last edited: 9/6/25, 7:12 PM
+Last edited: 10/2/25, 1:25 PM
